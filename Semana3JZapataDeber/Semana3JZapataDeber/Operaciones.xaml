@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana3JZapataDeber.Operaciones">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="txtUsuario"></Label>
+            <Entry x:Name="txtNotaSeguimiento" TextChanged="txtNotaSeguimiento_TextChanged"   Keyboard="Numeric" Placeholder="Nota Seguimiento 1" ></Entry>
+            <Entry x:Name="txtNotaExamen" TextChanged="txtNotaExamen_TextChanged" Keyboard="Numeric" Placeholder="Nota Examen 1"></Entry>
+            <Entry x:Name="txtNotaSeguimiento2" TextChanged="txtNotaSeguimiento2_TextChanged"  Keyboard="Numeric" Placeholder="Nota Seguimiento 2" ></Entry>
+            <Entry x:Name="txtNotaExamen2" TextChanged="txtNotaExamen2_TextChanged"  Keyboard="Numeric" Placeholder="Nota Examen 2" ></Entry>
+            <Button x:Name="btnCalcular" IsVisible="False" Text="Guardar" Clicked="btnCalcular_Clicked"></Button>
+            <Grid x:Name="grid" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" ></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label   Grid.Row="0" Grid.Column="0" Text="Seguimiento" HorizontalOptions="Center"></Label>
+                <Label  Grid.Row="0" Grid.Column="1" Text="Examen" HorizontalOptions="Center"></Label>
+                <Label  Grid.Row="0" Grid.Column="2" Text="Total Parcial" HorizontalOptions="Center"></Label>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

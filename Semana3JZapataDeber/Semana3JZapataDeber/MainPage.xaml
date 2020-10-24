@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana3JZapataDeber.MainPage">
+
+    <StackLayout>
+        <Entry x:Name="txtUsuario" Placeholder="Ingrese Usuario"></Entry>
+        <Entry x:Name="txtPassword" Placeholder="Ingrese Usuario"></Entry>
+        <Button x:Name="btnLogear" Text="Ingresar" Clicked="btnLogear_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>
