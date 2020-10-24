@@ -5,7 +5,7 @@
 
     <StackLayout>
         <Entry x:Name="txtUsuario" Placeholder="Ingrese Usuario"></Entry>
-        <Entry x:Name="txtPassword" Placeholder="Ingrese Usuario"></Entry>
+        <Entry x:Name="txtPassword" Placeholder="Ingrese Password"></Entry>
         <Button x:Name="btnLogear" Text="Ingresar" Clicked="btnLogear_Clicked"></Button>
     </StackLayout>
 
